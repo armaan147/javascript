@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--
+    <input type="text" id="1">
+    <input type="text" id="2">
+   <button>calc</button>
+    <script>
+        $(document).ready(function()
+        {
+    $("button").click(function(){
+      var x=$("#1").val();
+      var z=eval(x);
+      $("#2").val(z);
+
+
+    });
+  });
+              </script>
+          -->
+             
+          <!--
+          <p id="d1">2</p>
+              <p id="d2"> 4</p>
+              <h1 id="d3"></h1>
+              <button>aaa</button>
+              <script>
+                $(document).ready(function()
+                {
+            $("button").click(function(){
+              var x=Number($("#d1").text());
+              var y=Number($("#d2").text());
+              var z=x+y;
+              $("#d3").text(z);
+            });
+  });
+              </script>
+            -->
+             
+              <input type="text" id="t1">
+              <button>click</button>
+              <script>
+                $(document).ready(function()
+                {
+            $("button").click(function(){
+              var x=prompt("enter value");
+        
+              
+              if(x=="armaan yadav") {
+                $("#t1").val(x);  
+              }
+              else{
+                $("#t1").val("not found");
+              }
+            });
+  });
+              </script>
+</body>
+</html>

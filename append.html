@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>name</p>
+    <button id="b1">click</button>
+    <h1>hii</h1>
+    <button id="b2">click1</button>
+    <script>
+        $(document).ready(function(){
+          $("#b1").click(function(){
+            $("p").append("<input type='text'>");
+          });
+        
+          $("#b2").click(function(){
+            $("h1").append("hello");
+          });
+        });
+        </script>
+</body>
+</html>

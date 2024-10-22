@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ length  <input type="text" id="1"> 
+  breadth <input type="text" id="2">
+  result <input type="text" id="3">
+   <button onclick="square()">check</button>
+   <script>
+    function square(){
+var x=parseInt(document.getElementById('1').value);
+var y=parseInt(document.getElementById('2').value);
+if(x==y)
+{
+    document.getElementById('3').value="square";
+}
+else{
+    document.getElementById('3').value="not a square"; 
+}
+
+
+    }
+   </script>
+</body>
+</html>

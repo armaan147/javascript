@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Salary <input type="number" id="1">
+   <br>
+   <br>
+  year of service <input type="number" id="2">
+  <br>
+  <br>
+  bonus <input type="text" id="3">
+  <br>
+  <br>
+  Total <input type="number" id="4">
+  <br>
+  <br>
+  <button onclick="salary()">calculate</button>
+  <script>
+function salary()
+{
+    var x=parseInt(document.getElementById('1').value);
+    var y=parseInt(document.getElementById('2').value);
+    var z=x*5/100;
+    var a=x+z;
+if(y>5)
+{
+document.getElementById('3').value=z;
+document.getElementById('4').value=a;
+}
+else{
+    document.getElementById('3').value="no bonus"; 
+    document.getElementById('4').value=x; 
+}
+
+
+
+}
+
+  </script>
+</body>
+</html>

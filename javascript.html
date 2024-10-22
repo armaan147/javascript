@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--  var x=Number(prompt("enter"));
+    var y=Number(prompt("enter"));
+    var z=Number(prompt("enter"));
+    var a=Number(prompt("enter"));
+    var b=Number(prompt("enter"));
+    var c=x+y+z+a+b;
+    var p=c/5;
+    document.write("the sum is" +c);
+    
+    document.write("<br>the average is " +p);
+
+    item:     <input type="text" id="t1"> <br>
+    <br>
+    rate:     <input type="number" id="t2" ><br>
+    <br>
+    quantity: <input type="number" id="t3"><br>
+    <br>
+    total:    <input type="number" id="t4"><br>
+    <br>
+    GST:      <input type="number" id="t5"><br>
+    <br>
+    Net: <input type="number" id="t6">
+    <br>
+    <br>
+<button onclick="total()">Total</button> <br>
+
+
+   
+        function total()
+       {
+var x=parseInt(document.getElementById('t1').value);
+var y=parseInt(document.getElementById('t2').value);
+var a=parseInt(document.getElementById('t3').value);
+var b=y*a;
+var c=b*15/100;
+var d=b+c
+document.getElementById('t4').value=b;
+document.getElementById('t5').value=c;
+document.getElementById('t6').value=d;
+       }  
+    -->
+    Salary:     <input type="number" id="d1"> <br>
+    <br>
+    HRA (16%):     <input type="number" id="d2" ><br>
+    <br>
+    TA(18%): <input type="number" id="d3"><br>
+    <br>
+    DA(20%):    <input type="number" id="d4"><br>
+    <br>
+    PF(11%):      <input type="number" id="d5"><br>
+    <br>
+    GROSS: <input type="number" id="d6">
+    <br>
+    <br>
+<button onclick="salary()">Salary</button> <br>
+<br>
+<button onclick="indollar()">Salary in dollar</button>
+    <script>
+        var f;
+        function salary()
+        {
+            var a=parseFloat(document.getElementById('d1').value);
+         var b=a*16/100
+         var c=a*18/100
+         var d=a*20/100
+         var e=a*11/100
+          f=a+b+c+d-e
+         document.getElementById('d2').value=b;
+document.getElementById('d3').value=c;
+document.getElementById('d4').value=d;
+document.getElementById('d5').value=e;
+document.getElementById('d6').value=f;
+        }
+        function indollar()
+        {
+var g=f/83
+
+document.getElementById('d6').value=g;
+        }
+    </script>
+</body>
+</html>

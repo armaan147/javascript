@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   no. <input type="text" id="1">
+   date  <input type="text" id="2">
+   month <input type="text" id="3">
+   <button onclick="month()">check</button>
+   <script>
+function month()
+{
+    var x=parseInt(document.getElementById('1').value);
+    var y=parseInt(document.getElementById('2').value);
+if(x==8)
+{
+    if(y==6||y==13||y==20||y==27){
+        document.getElementById('3').value='thurshday';
+    }
+}
+else{
+    document.getElementById('3').value='no'; 
+}
+}
+
+
+
+   </script>
+</body>
+</html>

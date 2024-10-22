@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <input type="number" id="d1">
+    <input type="number" name="" id="d2">
+    <input type="number" id="d3">
+    <button onclick="add()">Total</button> <br>
+    
+        function add()
+            {
+                var x=parseFloat(document.getElementById('d1').value);
+                var y=parseFloat(document.getElementById('d2').value);
+                var c=x+y;
+                document.getElementById('d3').value=c;
+            }
+                -->
+            <input type="text" id="a1">
+            <button onclick="calc()">calc</button>
+            <script>
+                function calc()
+                {
+var x=document.getElementById('a1').value;
+var y=eval(x);
+document.getElementById('a1').value=y;
+                }
+    </script>
+</body>
+</html>
